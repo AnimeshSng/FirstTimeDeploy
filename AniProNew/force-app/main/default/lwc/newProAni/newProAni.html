@@ -1,0 +1,24 @@
+<template>
+    <!-- Dropdown -->
+    <lightning-combobox
+        label="Select Example"
+        value={value}
+        placeholder="Choose an option"
+        options={options}
+        onchange={handleChange}>
+    </lightning-combobox>
+
+    <!-- Conditionally show pills -->
+    <template if:true={showPill}>
+        <lightning-pill label="Astro" onremove={handleRemoveOnly}></lightning-pill>
+        <lightning-pill label="Codey" class="slds-p-left_x-small" onremove={handleRemoveOnly}></lightning-pill>
+        <lightning-pill
+            name="account"
+            label="Account Pill"
+            href="https://www.example.com"
+            onremove={handleRemoveOnly}
+            onclick={handleClick}>
+            <lightning-icon icon-name="standard:account" alternative-text="Account"></lightning-icon>
+        </lightning-pill>
+    </template>
+</template>
