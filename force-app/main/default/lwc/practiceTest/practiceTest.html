@@ -1,0 +1,21 @@
+<template>
+    <!-- Show Data -->
+    <template if:true={accounts}>
+        <template for:each={accounts} for:item="acc">
+            <p key={acc.Id}>{acc.Name}</p>
+        </template>
+    </template>
+
+    <!-- Show Error -->
+    <template if:true={error}>
+        <p>Error loading accounts</p>
+    </template>
+
+<template if:true={conRen}>
+<lightning-input type="text" variant="standard" name="name" label="label" placeholder="type here...."></lightning-input>
+</template>
+
+<lightning-button variant="brand" label="Show" title="Show" onclick={handleShow}></lightning-button>
+<lightning-button variant="brand" label="Hide" title="Hide" onclick={handleHide}></lightning-button>
+
+</template>

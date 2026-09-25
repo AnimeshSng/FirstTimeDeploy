@@ -1,0 +1,17 @@
+<aura:component access="global" >
+    <aura:attribute name="inputOne" type="Integer"/>
+    <aura:attribute name="inputTwo" type="Integer"/>
+    <aura:attribute name="additionAnswers" type="Integer"/>
+    
+    <div class="slds-m-around_large">
+        <lightning:input type="number" label = "Enter first value here" name="inputOne" value="{!v.inputOne}"></lightning:input>
+        <lightning:input type="number" label = "Enter second value here" name="inputTwo" value="{!v.inputTwo}"></lightning:input>
+        
+        <lightning:button variant="base" label="Add these numbers" title="Add" onclick="{! c.handleAddition}" class="slds-m-left_x-small"></lightning:button>
+        
+    </div>
+    
+    <div>
+    {!v.additionAnswers}
+    </div>
+</aura:component>

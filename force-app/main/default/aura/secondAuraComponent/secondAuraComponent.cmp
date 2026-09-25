@@ -1,0 +1,64 @@
+<aura:component controller= "apexCallingController">
+    <aura:handler name="init" value="{!this}" action="{!c.getContactData}" />
+    <aura:handler event="force:refreshView" action="{!c.getContactData}" />
+    <aura:attribute name="getConList" type="List"/>
+    <aura:attribute name="CreateContactModel" type="boolean" default="false"/>
+    <div class="slds">
+        <table style="height: 300px;">
+            <thead>
+                <tr>
+                    <th scop= "col"></th>
+                    <th scop= "col"></th>
+                    <th scop= "col"><button class= "slds-button slds-button_nutral" onclick= "{!c.openCreatedContact}">Create new contact</button></th>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Languages</th>
+                </tr>
+            </thead>
+            <tbody>
+                <aura:iteration items="{!v.getConList}" var="con">
+                    <tr>
+                        <td>{!con.Name}</td>
+                        <td>{!con.Email}</td>
+                        <td>{!con.Phone}</td>
+                        <td>{!con.Languages__c}</td>
+                    </tr>
+                </aura:iteration>
+            </tbody>
+        </table>
+        <aura:if isTrue="{!v.CreateContactModel}">
+            <section role="dialog" tabindex="-1" aria-modal="true" aria-label="Meaningful description of the modal content" class="slds-modal slds-fade-in-open">
+                <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
+                    <div class="slds-modal__container">
+                        <button class="slds-button slds-button_icon slds-modal__close" onclick= "{!c.closeModal}">
+                        </button>
+                        <div class="slds-modal__header">
+                            <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate" tabindex="-1">Modal header</h1>
+                        </div>
+                        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                            <lightning:input type="text" aura:id="conName" label="Enter Contact Name"></lightning:input>
+                            <lightning:input type="number" aura:id="phone" label="Enter Phone Name"></lightning:input>
+                            <lightning:input type="text" aura:id="email" label="Enter Email Id"></lightning:input>
+                        </div>
+                        <footer class="slds-modal__footer">
+                            <lightning:button variant = "neutral"
+                                              label="Cancel"
+                                              title="Cancel"
+                                              onclick="{!c.closeModal}">
+                            </lightning:button>
+                            <lightning:button variant="brand"
+                                              label="Create Account"
+                                              title="Create Account"
+                                              onclick="{!c.CreateContact}">
+                            </lightning:button>
+                        </footer>
+                    </div>
+                </section>
+                <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+            </section>
+        </aura:if>
+    </div>
+</aura:component>

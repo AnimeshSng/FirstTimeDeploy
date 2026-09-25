@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>States__c</fullName>
+    <label>States</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Living_country__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>States</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 1 | Andhra Pradesh | Amaravati |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 10 | Jharkhand | Ranchi |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 11 | Karnataka | Bengaluru |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 12 | Kerala | Thiruvananthapuram |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 13 | Madhya Pradesh | Bhopal |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 14 | Maharashtra | Mumbai |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 15 | Manipur | Imphal |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 16 | Meghalaya | Shillong |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 17 | Mizoram | Aizawl |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 18 | Nagaland | Kohima |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 19 | Odisha | Bhubaneswar |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 2 | Arunachal Pradesh | Itanagar |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 20 | Punjab | Chandigarh |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 21 | Rajasthan | Jaipur |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 22 | Sikkim | Gangtok |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 23 | Tamil Nadu | Chennai |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 24 | Telangana | Hyderabad |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 25 | Tripura | Agartala |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 26 | Uttarakhand | Dehradun |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 27 | Uttar Pradesh | Lucknow |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 28 | West Bengal | Kolkata |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 3 | Assam | Dispur |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 4 | Bihar | Patna |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 5 | Chhattisgarh | Raipur |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 6 | Goa | Panaji |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 7 | Gujarat | Gandhinagar |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 8 | Haryana | Chandigarh |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>| 9 | Himachal Pradesh | Shimla |</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Argentina</controllingFieldValue>
+            <valueName>Buenos Aires</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Argentina</controllingFieldValue>
+            <valueName>Córdoba</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Argentina</controllingFieldValue>
+            <valueName>Santa Fe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Argentina</controllingFieldValue>
+            <valueName>Mendoza, Salta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Argentina</controllingFieldValue>
+            <valueName>Jujuy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Argentina</controllingFieldValue>
+            <valueName>Misiones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Argentina</controllingFieldValue>
+            <valueName>Chac</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Argentina</controllingFieldValue>
+            <valueName>Formosa,</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Argentina</controllingFieldValue>
+            <valueName>La Rioja</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
