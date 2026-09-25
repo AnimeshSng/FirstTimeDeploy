@@ -3,6 +3,7 @@ import { LightningElement, track } from 'lwc';
 export default class PracticeSalesforce extends LightningElement {
 
 @track userProfile = {}
+isModalOpen = false;
 zodiacTraits = [
   {
     sign: 'Capricorn',
@@ -105,7 +106,12 @@ zodiacTraits = [
     const userMonth = userDob.getMonth() + 1;
     const userDate = userDob.getDate();
     this.userProfile = this.checkZodiacSign(userMonth, userDate);
+    this.isModalOpen = Boolean(this.userProfile);
 }
+
+  closeModal() {
+    this.isModalOpen = false;
+  }
 
 checkZodiacSign(month, day) {
     for (let sign of this.zodiacTraits) {

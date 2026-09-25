@@ -17,24 +17,56 @@
             onchange={handleDateChange}>  
         </lightning-input>
 
-        <lightning-button 
-            variant="brand" 
-            label="Hit it" 
-            title="Hit it"
-            onclick={handleSubmit}>
-        </lightning-button>
+        <div class="button-container">
+            <lightning-button 
+                variant="brand" 
+                label="Hit it" 
+                title="Hit it"
+                onclick={handleSubmit}>
+            </lightning-button>
+        </div>
     </lightning-card>
 
-    <lightning-card 
-    class="slds-align_absolute-center" 
-    variant="Narrow" 
-    title="Here is a bit about you"
-    footer={userProfile.sign}>
-    <p class="slds-p-horizontal_small">
-        {userProfile.emoji}
-        perfectly describes your personality. You are a {userProfile.sign} and your zodiac trait is
-        {userProfile.trait}
-        Perfectly matches your good looking personality. Your lucky number is {userProfile.luckyNumber} and your lucky color is {userProfile.luckyColor}.   
-    </p>
-</lightning-card>
+    <template if:true={isModalOpen}>
+        <section
+            role="dialog"
+            tabindex="-1"
+            aria-modal="true"
+            aria-labelledby="zodiac-modal-heading"
+            class="slds-modal slds-fade-in-open top-modal">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header green-modal__header">
+                    <lightning-button-icon
+                        class="slds-modal__close"
+                        icon-name="utility:close"
+                        alternative-text="Close"
+                        title="Close"
+                        onclick={closeModal}>
+                    </lightning-button-icon>
+                    <h2 id="zodiac-modal-heading" class="slds-text-heading_medium">
+                        Here is a bit about you
+                    </h2>
+                </header>
+
+                <div class="slds-modal__content slds-p-around_medium green-modal__content">
+                    <p class="slds-text-heading_large">
+                        {userProfile.emoji}
+                        <span class="zodiac-name">{userProfile.sign}</span>
+                    </p>
+                    <p class="slds-m-top_medium">
+                        Hello {userName}, {userProfile.trait}
+                    </p>
+                    <p class="slds-m-top_medium">
+                        Your lucky number is {userProfile.luckyNumber} and your lucky color is
+                        {userProfile.luckyColor}.
+                    </p>
+                </div>
+
+                <footer class="slds-modal__footer">
+                    <lightning-button label="Close" onclick={closeModal}></lightning-button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
 </template>

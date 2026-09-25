@@ -1,0 +1,29 @@
+.top-modal {
+    align-items: flex-start;
+    padding-top: 1rem;
+}
+
+.top-modal .slds-modal__container {
+    margin: 0 auto;
+}
+
+.green-modal__header {
+    background-color: #2e844a;
+    color: #ffffff;
+}
+
+.green-modal__content {
+    border-left: 0.25rem solid #2e844a;
+    background-color: #f3faf5;
+}
+
+.zodiac-name {
+    color: #ba0517;
+    font-weight: 700;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
